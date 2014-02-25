@@ -18,7 +18,7 @@
     <file path="/a.twig" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796510798" ignored="false" />
     <file path="/a.sql" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796508515" ignored="false" />
     <file path="/a.feature" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796498798" ignored="false" />
-    <file path="/chardb.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392357414386" ignored="false" />
+    <file path="/chardb.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393096946500" ignored="false" />
     <file path="/shutdowngamefriendly.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390220510018" ignored="false" />
     <file path="/ps.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390220181028" ignored="false" />
     <file path="/restoredb.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390248913309" ignored="false" />
@@ -37,6 +37,7 @@
     <file path="/mysql.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392091178685" ignored="false" />
     <file path="/dbd.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392103141948" ignored="false" />
     <file path="/broadcast.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392253004739" ignored="false" />
+    <file path="/Dummy.txt" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393096883133" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -760,8 +761,57 @@
       <file leaf-file-name="chardb.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chardb.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="803" column="99" selection-start="31157" selection-end="31157" vertical-scroll-proportion="1.2562674">
+            <state line="210" column="117" selection-start="7457" selection-end="7457" vertical-scroll-proportion="0.42827442">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modrole.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role/modrole.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="20" selection-start="4132" selection-end="4250" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1390881070197" expanded="true" signature="4262:19300" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4269:4419" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4427:19292" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4565:19244" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4569:19236" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4573:19231" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4617:19224" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4782:19216" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4789:4973" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="4981:5700" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="5707:6590" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="6597:7158" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="7167:8317" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="7200:7758" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="7779:8307" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="8793:8897" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="8826:8856" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="8877:8887" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="8946:9820" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="9827:10586" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="10593:11326" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="11333:12209" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="12216:12979" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="12986:13399" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="13406:13865" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="13872:14333" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="14340:14801" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="14808:15269" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="15276:15737" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="15744:16195" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="16202:16624" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="16631:17052" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="17059:17467" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="17474:17859" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="17878:18190" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="18197:18500" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="18507:18789" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="18802:19207" placeholder="..." />
+                <marker date="1390881070197" expanded="true" signature="18850:19199" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -845,6 +895,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -869,10 +927,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="736" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -890,7 +948,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -962,48 +1020,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -1021,10 +1037,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PWAERA" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/infi/infi" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -1133,19 +1149,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="1" width="1364" height="736" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19204152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19093406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11827957" sideWeight="0.8079585" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28725037" sideWeight="0.8079585" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0990991" sideWeight="0.80906594" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25418276" sideWeight="0.80906594" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16666667" sideWeight="0.8415978" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25686812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1219,11 +1235,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/faction.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="55" selection-start="0" selection-end="251" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/role/modrolexmlexport.jsp">
@@ -1251,11 +1267,6 @@
     <entry file="file://D:/PW/pwTools SVN-Downloader/pwTools SVN-Downloader/pwtools-bin/sPWadmin/pwAdmin/addons/FactionIcons/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="98" vertical-scroll-proportion="-1.2108108" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role/modrole.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="111" selection-start="5669" selection-end="5685" vertical-scroll-proportion="0.41132075" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/restartsvc.jsp">
@@ -1319,9 +1330,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/role/modrole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="20" selection-start="4132" selection-end="4250" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1390881070197" expanded="true" signature="4262:19300" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4269:4419" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4427:19292" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4565:19244" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4569:19236" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4573:19231" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4617:19224" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4782:19216" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4789:4973" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="4981:5700" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="5707:6590" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="6597:7158" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="7167:8317" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="7200:7758" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="7779:8307" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="8793:8897" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="8826:8856" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="8877:8887" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="8946:9820" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="9827:10586" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="10593:11326" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="11333:12209" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="12216:12979" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="12986:13399" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="13406:13865" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="13872:14333" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="14340:14801" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="14808:15269" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="15276:15737" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="15744:16195" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="16202:16624" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="16631:17052" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="17059:17467" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="17474:17859" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="17878:18190" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="18197:18500" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="18507:18789" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="18802:19207" placeholder="..." />
+            <marker date="1390881070197" expanded="true" signature="18850:19199" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chardb.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="803" column="99" selection-start="31157" selection-end="31157" vertical-scroll-proportion="1.2562674">
+        <state line="210" column="117" selection-start="7457" selection-end="7457" vertical-scroll-proportion="0.42827442">
           <folding />
         </state>
       </provider>

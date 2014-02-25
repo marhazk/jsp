@@ -208,7 +208,11 @@
 	//
 	try
 	{
-	    statement.executeUpdate("UPDATE roles r, factionusers fu, factions f SET r.guildname=f.fname WHERE fu.rid=r.roleid AND f.fid=fu.fid;");
+	    statement.executeUpdate("UPDATE roles r, factionusers fu, factions f SET r.guildname=f.fname, r.guildid=f.fid WHERE fu.rid=r.roleid AND f.fid=fu.fid;");
+	    statement.executeUpdate("UPDATE roles SET reborn=7 WHERE battlepowerlvl>=50 AND battlepowerlvl<=59");
+	    statement.executeUpdate("UPDATE roles SET reborn=6 WHERE battlepowerlvl>=40 AND battlepowerlvl<=49");
+	    statement.executeUpdate("UPDATE roles SET reborn=5 WHERE battlepowerlvl>=30 AND battlepowerlvl<=39");
+	    statement.executeUpdate("UPDATE roles SET reborn=4 WHERE battlepowerlvl>=20 AND battlepowerlvl<=29");
 	}
 	catch (Exception e)
 	{
@@ -341,6 +345,7 @@
                                 int chkex = statement.executeUpdate("UPDATE roles SET online=1, online2=1 WHERE (online2=0 OR online2<=1) AND roleid="+_roleid);
                                 names += " (ON) SQL:"+_role.status.reputation;
                                 ChatRole[index] = _roleid;
+                                statement.executeUpdate("INSERT INTO stats (roleid, flag, userid) VALUES ('"+_roleid+"', '"+flag+"', '"+_uid+"')");
             				}
             				else
             				{
@@ -422,6 +427,7 @@
                 RoleDB5[index] = Integer.parseInt(rst.getString("online2"));
                 RoleDB6[index] = Integer.parseInt(rst.getString("level"));
                 RoleDB7[index] = Math.round(Float.parseFloat(rst.getString("bounty")));
+
                 //SRoleDB0[index] = rst.getString("fname");
                 SRoleDB1[index] = rst.getString("cname");
                 SRoleDB2[index] = rst.getString("gname");
@@ -468,6 +474,7 @@
                     int battlepower_lvl1 = _role.status.level;
                     int battlepower_lvl2 = _level2;
                     int battlepower_lvl3 = _level3;
+                    int totalquests = Math.round(battlepower_task/4);
 
                     /// CALCULATING BP
                     int value_max = (int)(battlepower_task + 1) * (_reborn + 1);
@@ -502,7 +509,7 @@
                                         else
                                             modetype = "(NEW PLAYER)";
 
-                                        String xemsg2 = "Welcome, "+_role.base.name.getString().replaceAll("'","")+"! | LEVEL: "+_level+" | MODE: "+modetype+" | CLASS: "+SRoleDB3[index]+" | CULTIVATION: "+SRoleDB1[index]+" | GENDER: "+SRoleDB2[index]+" | BP LEVEL: "+SRoleDB5[index]+" | BP EXP: "+SRoleDB6[index]+"% | BOUNTY: "+RoleDB7[index]+" | GUILD: "+SRoleDB7[index];
+                                        String xemsg2 = "Welcome, "+_role.base.name.getString().replaceAll("'","")+"! | LEVEL: "+_level+" | MODE: "+modetype+" | CLASS: "+SRoleDB3[index]+" | CULTIVATION: "+SRoleDB1[index]+" | GENDER: "+SRoleDB2[index]+" | BP LEVEL: "+SRoleDB5[index]+" | BP EXP: "+SRoleDB6[index]+"% | TOTAL COMPLETED QUESTS: "+totalquests+" | BOUNTY: "+RoleDB7[index]+" | GUILD: "+SRoleDB7[index];
                                         boolean xesuccess2 = DeliveryDB.broadcast((byte)9,-1,xemsg2);
                                     }
                                 }
@@ -2148,7 +2155,7 @@
 	//
 	try
 	{
-	    String sqlDB = "SELECT p.roleid as rid, p.name as name, p.battlepower as new, l.battlepower as old FROM (SELECT * FROM roles) AS p, levels l WHERE p.roleid=l.rid AND p.battlepower!=l.battlepower";
+	    String sqlDB = "SELECT p.roleid as rid, p.name as name, p.battlepower as new, p.battlepower as old, p.battlepowerpct, p.battlepowerlvl FROM (SELECT * FROM roles) AS p, levels l WHERE p.roleid=l.rid AND p.battlepower!=l.battlepower";
 	    rst = statement.executeQuery(sqlDB);
 		index = 0;
 		total = 0;
@@ -2162,6 +2169,8 @@
 	    String atempDB1[] = new String[total];
 	    int atempDB2[] = new int[total];
         int atempDB3[] = new int[total];
+	    String atempDB4[] = new String[total];
+        int atempDB5[] = new int[total];
 
 		rst = statement.executeQuery(sqlDB);
 		index = 0;
@@ -2171,11 +2180,16 @@
 			atempDB1[index] = rst.getString("name");
 			atempDB2[index] = Integer.parseInt(rst.getString("new"));
 			atempDB3[index] = Integer.parseInt(rst.getString("old"));
+			atempDB4[index] = rst.getString("battlepowerpct");
+			atempDB5[index] = Integer.parseInt(rst.getString("battlepowerlvl"));
 			index++;
 		}
 
 		String sqlTemp = "";
 		String sqlURL = "";
+		String msgPM = "";
+
+		boolean r = false;
 		for (index = 0; index < total; index++)
 		{
 		    sqlTemp = "INSERT INTO ae_activities (amsg) VALUES ('PW: " + atempDB1[index] + " has gained BattlePower from " + atempDB3[index] + " to " + atempDB2[index] + "');";
@@ -2197,14 +2211,49 @@
                 out.println("ERROR");
             }
 
+            RoleBean _role = GameDB.get(Integer.parseInt(atempDB0[index]));
+    		String _bppct = atempDB4[index];
+    		int _bplvl = atempDB5[index];
+
+    		msgPM = "[AERA] Your BattlePower experience (BP Exp): " + _bppct + "% (BP L"+_bplvl+")";
+    		try
+    		{
+    		    int ChatRoleID = 0;
+    		    for (ChatRoleID = 0; ChatRoleID < ChatRoleTotal; ChatRoleID++)
+    		        if (ChatRole[ChatRoleID] != Integer.parseInt(atempDB0[index]))
+    		            break;
+    		    for (int chattype = 10; chattype < 100; chattype++)
+    		    {
+    		        flag = -1;
+            		flag = gs.getRoleLogStatus(Integer.parseInt(atempDB0[index]), info);
+            		if (flag >= 1)
+            		{
+                        pchat = (PrivateChat)com.goldhuman.IO.Protocol.Protocol.Create("PrivateChat");
+                        pchat.msg.setString(msgPM);
+                        pchat.channel = (byte)chattype;
+                        pchat.srcroleid = ChatRole[ChatRoleID];
+                        pchat.src_name.setString(atempDB1[index]);
+                        pchat.dstroleid = Integer.parseInt(atempDB0[index]);
+                        r = DeliveryDB.mgr.Send(DeliveryDB.mgr.s, pchat);
+                        com.goldhuman.IO.PollIO.WakeUp();
+                        if (r)
+                            break;
+                    }
+                }
+    		}
+            catch(Exception ex)
+            {
+                out.println("BPLVL: MSGBP ERROR");
+            }
+
 		    //out.println("<BR>PWI:BP: " + atempDB1[index] + " - " + atempDB3[index] + " to " + atempDB2[index]);
-		    statement.executeUpdate("UPDATE levels SET battlepower=" + atempDB2[index] + " WHERE rid=" + atempDB0[index] + ";");
+		    statement.executeUpdate("UPDATE levels l, roles r SET l.battlepower=" + atempDB2[index] + ", l.battlepowerpct=ROUND(((((r.task_complete_size+r.level)-(FLOOR(SQRT(r.task_complete_size+r.level))*FLOOR(SQRT(r.task_complete_size+r.level))))/((FLOOR(SQRT(r.task_complete_size+r.level)+1)*FLOOR(SQRT(r.task_complete_size+r.level)+1))-(FLOOR(SQRT(r.task_complete_size+r.level))*FLOOR(SQRT(r.task_complete_size+r.level)))))*100),2) WHERE r.roleid=l.rid AND l.rid=" + atempDB0[index] + ";");
 		}
-		out.println("<BR>" + sqlTemp2);
+		out.println("<BR> ERROR BP:" + sqlTemp2);
 	}
 	catch (Exception e)
 	{
-                out.println("ERROR: " + e);
+                out.println("ERROR BP: " + e);
 	}
 	//
 	//
@@ -2242,12 +2291,47 @@
 		String sqlTemp = "";
 		String sqlURL = "";
 		String msgPM = "";
+		String msgPC = "";
 		boolean r = false;
 		for (index = 0; index < total; index++)
 		{
 		    sqlTemp = "INSERT INTO ae_activities (amsg) VALUES ('PW: " + atempDB1[index] + " has gain BP level from L" + atempDB3[index] + " to L" + atempDB2[index] + "');";
 		    sqlURL = "http://www.perfectworld.com.my/?/System/ActivitySQL/?x=haz&r=" + URLEncoder.encode(sqlTemp, "UTF-8");
-    		msgPM = "[AERA] You has gain BP level from L" + atempDB3[index] + " to L" + atempDB2[index];
+
+    		RoleBean _role = GameDB.get(Integer.parseInt(atempDB0[index]));
+    		int _bplvl = atempDB2[index];
+    		int _chlvl = _role.status.level;
+    		int _pct = ((_bplvl/_chlvl)*100);
+    		String _pvemood = "";
+    		if (_pct >= 100)
+    		    _pvemood = "Quest Maniac";
+    		else if (_pct >= 90)
+    		    _pvemood = "Madly Questing";
+    		else if (_pct >= 80)
+    		    _pvemood = "Busy with Questing";
+    		else if (_pct >= 70)
+    		    _pvemood = "Experience";
+    		else if (_pct >= 60)
+    		    _pvemood = "In-Love with Questing";
+    		else if (_pct >= 50)
+    		    _pvemood = "Normally Questing";
+    		else if (_pct >= 25)
+    		    _pvemood = "Started to Questing";
+    		else if (_pct >= 10)
+    		    _pvemood = "Turning-off Questing";
+    		else
+    		    _pvemood = "Better you choose PvP";
+    		msgPM = "[AERA] You have gain BP level from L" + atempDB3[index] + " to L" + atempDB2[index];
+    		if (_role.status.reputation >= 1000000)
+    		{
+    		    if (atempDB2[index] >= 10)
+    		    {
+                    String tcompletedb[] = (_role.task.task_complete).toString().split("=");
+                    String tcomplete = tcompletedb[1];
+                    msgPC = atempDB1[index]+" has gain BP level from L" + atempDB3[index] + " to L" + atempDB2[index]+" (Total Completed Quests: "+Math.round((Float.parseFloat(tcomplete))/4)+" quests).";
+                    boolean bmsg = DeliveryDB.broadcast((byte)9,-1,msgPC);
+                }
+    		}
     		try
     		{
     		    int ChatRoleID = 0;
@@ -2256,16 +2340,21 @@
     		            break;
     		    for (int chattype = 10; chattype < 100; chattype++)
     		    {
-                    pchat = (PrivateChat)com.goldhuman.IO.Protocol.Protocol.Create("PrivateChat");
-                    pchat.msg.setString(msgPM);
-                    pchat.channel = (byte)chattype;
-                    pchat.srcroleid = ChatRole[ChatRoleID];
-                    pchat.src_name.setString(atempDB1[index]);
-                    pchat.dstroleid = Integer.parseInt(atempDB0[index]);
-                    r = DeliveryDB.mgr.Send(DeliveryDB.mgr.s, pchat);
-                    com.goldhuman.IO.PollIO.WakeUp();
-                    if (r)
-                        break;
+    		        flag = -1;
+            		flag = gs.getRoleLogStatus(Integer.parseInt(atempDB0[index]), info);
+            		if (flag >= 1)
+            		{
+                        pchat = (PrivateChat)com.goldhuman.IO.Protocol.Protocol.Create("PrivateChat");
+                        pchat.msg.setString(msgPM);
+                        pchat.channel = (byte)chattype;
+                        pchat.srcroleid = ChatRole[ChatRoleID];
+                        pchat.src_name.setString(atempDB1[index]);
+                        pchat.dstroleid = Integer.parseInt(atempDB0[index]);
+                        r = DeliveryDB.mgr.Send(DeliveryDB.mgr.s, pchat);
+                        com.goldhuman.IO.PollIO.WakeUp();
+                        if (r)
+                            break;
+                    }
                 }
     		}
             catch(Exception ex)
