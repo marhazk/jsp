@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" name="Default" comment="" />
+    <list default="true" id="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chardb.jsp" afterPath="$PROJECT_DIR$/chardb.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="jsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/../../../application/controllers/Accounts.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1382731888644" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1382765679061" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1382737914830" ignored="false" />
     <file path="/a.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796515158" ignored="false" />
     <file path="/index.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392103359315" ignored="false" />
@@ -18,7 +20,7 @@
     <file path="/a.twig" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796510798" ignored="false" />
     <file path="/a.sql" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796508515" ignored="false" />
     <file path="/a.feature" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390796498798" ignored="false" />
-    <file path="/chardb.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393096946500" ignored="false" />
+    <file path="/chardb.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393350796393" ignored="false" />
     <file path="/shutdowngamefriendly.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390220510018" ignored="false" />
     <file path="/ps.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390220181028" ignored="false" />
     <file path="/restoredb.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1390248913309" ignored="false" />
@@ -37,7 +39,12 @@
     <file path="/mysql.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392091178685" ignored="false" />
     <file path="/dbd.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392103141948" ignored="false" />
     <file path="/broadcast.jsp" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1392253004739" ignored="false" />
-    <file path="/Dummy.txt" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393096883133" ignored="false" />
+    <file path="/Dummy.txt" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393576188012" ignored="false" />
+    <file path="/httpd-vhosts.conf" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393446126116" ignored="false" />
+    <file path="/httpd.conf" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393445901886" ignored="false" />
+    <file path="/httpd-proxy.conf" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393446117790" ignored="false" />
+    <file path="/pw.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393521554597" ignored="false" />
+    <file path="/cmd.php" changelist="3d04cb85-a938-4cc6-900b-c4c93f2c8f39" time="1393538867885" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -758,100 +765,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chardb.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chardb.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="117" selection-start="7457" selection-end="7457" vertical-scroll-proportion="0.42827442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modrole.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role/modrole.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="20" selection-start="4132" selection-end="4250" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1390881070197" expanded="true" signature="4262:19300" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4269:4419" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4427:19292" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4565:19244" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4569:19236" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4573:19231" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4617:19224" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4782:19216" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4789:4973" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="4981:5700" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="5707:6590" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="6597:7158" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="7167:8317" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="7200:7758" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="7779:8307" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="8793:8897" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="8826:8856" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="8877:8887" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="8946:9820" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="9827:10586" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="10593:11326" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="11333:12209" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="12216:12979" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="12986:13399" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="13406:13865" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="13872:14333" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="14340:14801" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="14808:15269" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="15276:15737" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="15744:16195" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="16202:16624" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="16631:17052" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="17059:17467" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="17474:17859" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="17878:18190" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="18197:18500" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="18507:18789" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="18802:19207" placeholder="..." />
-                <marker date="1390881070197" expanded="true" signature="18850:19199" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restartsvc.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/restartsvc.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="19" selection-start="5033" selection-end="5033" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1392105944035" expanded="true" signature="6407:6974" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6414:6575" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6583:6966" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6721:6918" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6725:6910" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6729:6905" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6839:6898" placeholder="..." />
-                <marker date="1392105944035" expanded="true" signature="6846:6889" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logdb.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/logdb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="3864" selection-end="4005" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="56" selection-start="8417" selection-end="8417" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="broadcast.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage/broadcast.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -861,19 +774,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chkport.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/chkport.php">
+      <file leaf-file-name="logdb.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/logdb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+            <state line="23" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbd.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/dbd.php">
+      <file leaf-file-name="cmd.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/cmd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+            <state line="97" column="13" selection-start="2739" selection-end="2739" vertical-scroll-proportion="1.1983123">
               <folding />
             </state>
           </provider>
@@ -906,11 +819,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/test.php" />
-        <option value="$PROJECT_DIR$/role/modrole.jsp" />
-        <option value="$USER_HOME$/Downloads/TeraEmulator_1725-master/TeraEmulator_1725-master/build/config/network/gameserverNetworkConfig.xml" />
-        <option value="$USER_HOME$/Downloads/TeraEmulator_1725-master/TeraEmulator_1725-master/build/config/server/serverConfig.xml" />
-        <option value="$USER_HOME$/Downloads/TeraEmulator_1725-master/TeraEmulator_1725-master/build/config/network/databaseConfig.xml" />
         <option value="$PROJECT_DIR$/role/index.jsp" />
         <option value="$PROJECT_DIR$/role/modrolexmlexport.jsp" />
         <option value="$PROJECT_DIR$/php/logdb.php" />
@@ -922,6 +830,11 @@
         <option value="$PROJECT_DIR$/manage/restartsvc.jsp" />
         <option value="$PROJECT_DIR$/manage/broadcast.jsp" />
         <option value="$PROJECT_DIR$/chardb.jsp" />
+        <option value="D:/xampp/apache/conf/extra/httpd-vhosts.conf" />
+        <option value="D:/xampp/apache/conf/httpd.conf" />
+        <option value="D:/xampp/apache/conf/extra/httpd-proxy.conf" />
+        <option value="$PROJECT_DIR$/php/pw.php" />
+        <option value="$PROJECT_DIR$/php/cmd.php" />
       </list>
     </option>
   </component>
@@ -929,7 +842,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
+    <option name="width" value="1612" />
     <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1035,19 +948,35 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="208" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="208" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="208" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/infi/infi" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="208" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="882" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="883" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="208" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="207" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="iWeb" serverId="c2f8fab3-8722-4304-b61c-f310aa507d27" promptOnLocalOverwrite="false" autoUpload="true" uploadOnSaveAll="true" autoUploadExternalChanges="true">
     <servers>
@@ -1149,21 +1078,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1612" height="886" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19093406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26373628" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0990991" sideWeight="0.80906594" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25418276" sideWeight="0.80906594" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09806452" sideWeight="0.73626375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27806452" sideWeight="0.73626375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16666667" sideWeight="0.8415978" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25686812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19577464" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1234,55 +1163,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/faction.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="55" selection-start="0" selection-end="251" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role/modrolexmlexport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="33" selection-start="2230" selection-end="5187" vertical-scroll-proportion="0.5963964" />
-      </provider>
-    </entry>
-    <entry file="file://D:/PW/pwTools SVN-Downloader/pwTools SVN-Downloader/pwtools-bin/sPWadmin/pwAdmin/addons/SkillHexGen/skill.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/chkport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role/saverole.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="55" selection-start="5257" selection-end="5259" vertical-scroll-proportion="1.0528302" />
-      </provider>
-    </entry>
     <entry file="file://D:/PW/pwTools SVN-Downloader/pwTools SVN-Downloader/pwtools-bin/sPWadmin/pwAdmin/addons/FactionIcons/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="98" vertical-scroll-proportion="-1.2108108" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/restartsvc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="19" selection-start="5033" selection-end="5033" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1392105944035" expanded="true" signature="6407:6974" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6414:6575" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6583:6966" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6721:6918" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6725:6910" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6729:6905" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6839:6898" placeholder="..." />
-            <marker date="1392105944035" expanded="true" signature="6846:6889" placeholder="..." />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/protocol/WorldChat.java">
@@ -1290,25 +1173,9 @@
         <state line="56" column="24" selection-start="1926" selection-end="1926" vertical-scroll-proportion="1.6969697" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/logdb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3864" selection-end="4005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/dbd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="56" selection-start="8417" selection-end="8417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="56" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/index.jsp">
@@ -1323,6 +1190,54 @@
         <state line="51" column="74" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.3317757" />
       </provider>
     </entry>
+    <entry file="file://D:/xampp/apache/conf/httpd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="0" selection-start="6502" selection-end="6502" vertical-scroll-proportion="0.01994302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/xampp/apache/conf/extra/httpd-vhosts.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="1" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.66096866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chardb.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2891" column="62" selection-start="111274" selection-end="111274" vertical-scroll-proportion="0.021021022" />
+      </provider>
+    </entry>
+    <entry file="file://D:/xampp/apache/conf/extra/httpd-proxy.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="187" selection-end="187" vertical-scroll-proportion="0.11965812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/xampp/apache/conf/extra/httpd-ssl.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="29" selection-start="3388" selection-end="3476" vertical-scroll-proportion="0.01994302" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role/modrole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="20" selection-start="4132" selection-end="4250" vertical-scroll-proportion="0.021021022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/restartsvc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="634" selection-end="660" vertical-scroll-proportion="0.021021022" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="56" selection-start="8417" selection-end="8417" vertical-scroll-proportion="0.020319303" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/manage/broadcast.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="28" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
@@ -1330,56 +1245,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role/modrole.jsp">
+    <entry file="file://$PROJECT_DIR$/php/logdb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="20" selection-start="4132" selection-end="4250" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1390881070197" expanded="true" signature="4262:19300" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4269:4419" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4427:19292" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4565:19244" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4569:19236" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4573:19231" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4617:19224" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4782:19216" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4789:4973" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="4981:5700" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="5707:6590" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="6597:7158" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="7167:8317" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="7200:7758" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="7779:8307" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="8793:8897" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="8826:8856" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="8877:8887" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="8946:9820" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="9827:10586" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="10593:11326" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="11333:12209" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="12216:12979" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="12986:13399" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="13406:13865" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="13872:14333" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="14340:14801" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="14808:15269" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="15276:15737" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="15744:16195" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="16202:16624" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="16631:17052" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="17059:17467" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="17474:17859" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="17878:18190" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="18197:18500" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="18507:18789" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="18802:19207" placeholder="..." />
-            <marker date="1390881070197" expanded="true" signature="18850:19199" placeholder="..." />
-          </folding>
+        <state line="23" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chardb.jsp">
+    <entry file="file://$PROJECT_DIR$/php/cmd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="117" selection-start="7457" selection-end="7457" vertical-scroll-proportion="0.42827442">
+        <state line="97" column="13" selection-start="2739" selection-end="2739" vertical-scroll-proportion="1.1983123">
           <folding />
         </state>
       </provider>

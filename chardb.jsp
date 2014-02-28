@@ -90,9 +90,15 @@
 	
 	SimpleDateFormat sdf = new SimpleDateFormat( "dd/MM/yyyy hh:mm:ss" );
 	SimpleDateFormat _sqldate = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );
+	SimpleDateFormat _sqldatemaintenance = new SimpleDateFormat( "yyyyMMddHHmmss" );
+	SimpleDateFormat _sqldatemaintenanceDay = new SimpleDateFormat( "F" );
+	SimpleDateFormat _sqldatemaintenanceHHMM = new SimpleDateFormat( "Hmm" );
 	// 07/02/2008 03:22:32
 	String snow=sdf.format(now);
 	String sqldate=_sqldate.format(now);
+	String datemaintenance=_sqldatemaintenance.format(now);
+	String datemaintenanceDay=_sqldatemaintenanceDay.format(now);
+	String datemaintenanceHHMM=_sqldatemaintenanceHHMM.format(now);
 	out.println( snow );
 	
 	Connection connection = null;
@@ -2249,7 +2255,6 @@
 		    //out.println("<BR>PWI:BP: " + atempDB1[index] + " - " + atempDB3[index] + " to " + atempDB2[index]);
 		    statement.executeUpdate("UPDATE levels l, roles r SET l.battlepower=" + atempDB2[index] + ", l.battlepowerpct=ROUND(((((r.task_complete_size+r.level)-(FLOOR(SQRT(r.task_complete_size+r.level))*FLOOR(SQRT(r.task_complete_size+r.level))))/((FLOOR(SQRT(r.task_complete_size+r.level)+1)*FLOOR(SQRT(r.task_complete_size+r.level)+1))-(FLOOR(SQRT(r.task_complete_size+r.level))*FLOOR(SQRT(r.task_complete_size+r.level)))))*100),2) WHERE r.roleid=l.rid AND l.rid=" + atempDB0[index] + ";");
 		}
-		out.println("<BR> ERROR BP:" + sqlTemp2);
 	}
 	catch (Exception e)
 	{
@@ -2856,6 +2861,54 @@
 	catch (Exception e)
 	{
                 out.println("ERROR: " + e);
+	}
+
+	/////////////////////////////
+	// UPDATE ROLES ONLINE through GAMEDBD
+	// COMPLETED VERSION
+	/////////////////////////////
+	//
+	try
+	{
+		/////////////////////////////
+		//UPDATE ROLES ONLINE
+		/////////////////////////////
+		//
+		rst = statement.executeQuery("SELECT * FROM uwebsettings LIMIT 0,1");
+		int maintenanceMode = 0;
+		while (rst.next())
+		{
+		    try
+		    {
+                maintenanceMode = Integer.parseInt(rst.getString("mainteinance"));
+			}
+            catch (Exception e)
+            {
+                out.println("<br><B>UWEBSETTING: "+e+"</B>");
+            }
+        }
+        out.println("<br><B>UWEBSETTING START CHECKING: </B>"+datemaintenance+" Day: "+datemaintenanceDay+" HHMM:"+datemaintenanceHHMM);
+        int _set_d = Integer.parseInt(datemaintenanceDay);
+        int _set_hhmm = Integer.parseInt(datemaintenanceHHMM);
+        if (((_set_d == 2) && (_set_hhmm >= 354) && (_set_hhmm <= 355)) || ((_set_d == 6) && (_set_hhmm >= 354) && (_set_hhmm <= 355)))
+        {
+            //sqldate
+            if ((maintenanceMode == 0))
+            {
+                statement.executeUpdate("UPDATE uwebsettings SET mainteinance=1, mainteinancedate='"+sqldate+"', mainteinancetimes=mainteinancetimes+1");
+
+                byte[] bmaintenance = new byte[4096];
+                String amsgmaintenance = "Server will maintenance in 5 minutes. Please log-off your account now to avoid lost-data of your accounts. Staying online during maintenance at your OWN RISK. Please dont forget to VERIFY your client with our patch once the server is up";
+                boolean successmsg = DeliveryDB.broadcast((byte)9,-1,amsgmaintenance);
+                boolean success = DeliveryDB.GMRestartServer( -1, 300 );
+                Runtime.getRuntime().exec( "/bin/bash /root/shuttimer "+(310) ).getInputStream().read( bmaintenance );
+            }
+        }
+        out.println("<br><B>UWEBSETTING DONE CHECKING</B>");
+	}
+	catch (Exception e)
+	{
+        out.println("<br><B>UWEBSETTING: "+e+"</B>");
 	}
 
 %>
