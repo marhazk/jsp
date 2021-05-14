@@ -98,7 +98,7 @@
 	
 	Connection connection = null;
     Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-    connection = DriverManager.getConnection("jdbc:mysql://192.168.1.2/dbo?useUnicode=true&amp;characterEncoding=utf8", "root", "5449");
+    connection = DriverManager.getConnection("jdbc:mysql://192.168.1.2/dbo?useUnicode=true&amp;characterEncoding=utf8", "root", "....");
 
 	Statement statement = connection.createStatement();
 	
